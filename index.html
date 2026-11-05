@@ -28,7 +28,7 @@
 <body>
 
 <h1>Chính sách quyền riêng tư — Lịch Vạn Niên - Âm Lịch</h1>
-<p class="updated">Cập nhật lần cuối: 01/11/2026</p>
+<p class="updated">Cập nhật lần cuối: 05/11/2026</p>
 
 <p>
 Ứng dụng <strong>Lịch Vạn Niên - Âm Lịch</strong> (gói ứng dụng: <code>com.licham.lichvannien.app</code>,
@@ -48,20 +48,21 @@ việc sử dụng Ứng dụng gồm:</p>
   <tr>
     <td>Mã quảng cáo thiết bị (Advertising ID) và dữ liệu quảng cáo tiêu chuẩn</td>
     <td>Hiển thị quảng cáo (banner, quảng cáo toàn màn hình) thông qua nền tảng AppLovin MAX và
-        các mạng quảng cáo đối tác của AppLovin</td>
+        các mạng quảng cáo đối tác của AppLovin; quảng cáo khi mở Ứng dụng thông qua Google AdMob</td>
     <td>Bên thứ ba (xem mục 3)</td>
   </tr>
   <tr>
     <td>Nhật ký sự cố (crash log) và dữ liệu hoạt động sử dụng cơ bản (màn hình đã mở, phiên sử
-        dụng, model thiết bị, phiên bản hệ điều hành)</td>
+        dụng, một số thao tác chính như lập lá số, xem tuổi nhân duyên, đo hướng cửa; model thiết bị,
+        phiên bản hệ điều hành; vị trí gần đúng ở cấp tỉnh/thành phố do dịch vụ tự suy ra từ địa chỉ IP)</td>
     <td>Phát hiện và khắc phục lỗi kỹ thuật (Firebase Crashlytics); hiểu cách Ứng dụng được sử
         dụng để cải thiện trải nghiệm (Firebase Analytics)</td>
     <td>Bên thứ ba — Google Firebase (xem mục 3)</td>
   </tr>
   <tr>
     <td>Dữ liệu cảm biến thiết bị (la bàn / gia tốc kế)</td>
-    <td>Tính năng "La bàn xuất hành" — xác định hướng thiết bị đang chỉ tới. Không thu thập vị trí
-        GPS, không rời khỏi thiết bị</td>
+    <td>Tính năng "La bàn xuất hành" và "Đo hướng cửa" (Xem tuổi làm nhà) — xác định hướng thiết bị
+        đang chỉ tới. Không thu thập vị trí GPS, không rời khỏi thiết bị</td>
     <td>Chỉ xử lý trên thiết bị, không lưu trữ</td>
   </tr>
   <tr>
@@ -83,7 +84,7 @@ việc sử dụng Ứng dụng gồm:</p>
   <li><strong>Thông báo (Notifications)</strong> — để nhắc bạn về sự kiện cá nhân bạn tự tạo trong Ứng dụng.</li>
   <li><strong>Truy cập Internet / trạng thái mạng</strong> — để tải quảng cáo, kiểm tra kết nối, tạo giọng đọc tên (Premium) và tải giọng đọc tóm tắt lá số.</li>
   <li><strong>Cảm biến la bàn / gia tốc kế</strong> (nếu thiết bị có) — chỉ dùng cho tính năng La bàn
-      xuất hành, xử lý hoàn toàn trên thiết bị.</li>
+      xuất hành và Đo hướng cửa, xử lý hoàn toàn trên thiết bị.</li>
 </ul>
 <p>Ứng dụng <strong>không</strong> yêu cầu quyền vị trí (GPS), camera, danh bạ, hay bộ nhớ ngoài
 ngoài phạm vi chọn 1 ảnh làm nền tuỳ chỉnh (thông qua trình chọn ảnh hệ thống của thiết bị).</p>
@@ -93,12 +94,17 @@ ngoài phạm vi chọn 1 ảnh làm nền tuỳ chỉnh (thông qua trình ch�
 Để hiển thị quảng cáo, AppLovin và các mạng quảng cáo mà AppLovin kết nối tới (bao gồm AppLovin
 Exchange và các đối tác khác có thể được bật/tắt theo thời gian) có thể thu thập mã quảng cáo
 thiết bị và dữ liệu quảng cáo tiêu chuẩn của ngành, theo chính sách quyền riêng tư riêng của họ.</p>
+<p>Quảng cáo hiển thị khi mở Ứng dụng được cung cấp bởi <strong>Google AdMob</strong> (dịch vụ của
+Google), có thể thu thập mã quảng cáo thiết bị và dữ liệu quảng cáo tiêu chuẩn theo chính sách
+quyền riêng tư của Google.</p>
 <p>Chúng tôi cũng sử dụng <strong>Firebase Crashlytics</strong> và <strong>Firebase Analytics</strong>
 (dịch vụ của Google) để phát hiện lỗi kỹ thuật và hiểu cách Ứng dụng được sử dụng, theo chính sách
-quyền riêng tư của Google.</p>
+quyền riêng tư của Google. Các dịch vụ phân tích và quảng cáo có thể suy ra vị trí gần đúng (cấp
+tỉnh/thành phố) từ địa chỉ IP của thiết bị; Ứng dụng không thu thập vị trí chính xác. Dữ liệu
+gửi cho Firebase Analytics không kèm họ tên, ngày giờ sinh hay nội dung lá số của bạn.</p>
 <ul>
   <li>AppLovin — <a href="https://www.applovin.com/privacy/" target="_blank" rel="noopener">applovin.com/privacy</a></li>
-  <li>Google Firebase — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+  <li>Google Firebase và Google AdMob — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
 </ul>
 <p>Chúng tôi không bán dữ liệu người dùng cho bên thứ ba ngoài các mục đích nêu trên.</p>
 
